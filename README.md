@@ -36,6 +36,19 @@ Once you finish the assignment, submit a URL link to your repository or your pul
   - `status`: the member's status, which can be _ACTIVE_ or _LAPSED_
   - `renewal date`: the date on which the member's membership will be renewed
 
+
+ Para cumplir con los requerimientos, el diagrama UML que me he planteado es este:
+
+ ![image](https://github.com/user-attachments/assets/8de9069c-6e7f-4eec-8f76-d729fa434447)
+
+
+ Cuya sintaxis correspondiente es esta
+
+ ![image](https://github.com/user-attachments/assets/d8ef3f86-0e78-4676-a434-809b7e533fbd)
+
+ 
+
+
 2. Using the Spring JPA model, create the relationships for an Event Management application. The application needs to model upcoming events, which can be of two types: Conferences or Expositions.
 
 - Each event has the following properties:
