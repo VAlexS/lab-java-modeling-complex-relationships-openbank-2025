@@ -46,6 +46,10 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
  ![image](https://github.com/user-attachments/assets/d8ef3f86-0e78-4676-a434-809b7e533fbd)
 
+En cuanto a las tablas creadas en mySQL, he creado estas tablas
+
+![img.png](img.png)
+
  
 
 
