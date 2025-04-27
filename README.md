@@ -73,6 +73,65 @@ In addition to the typical event properties, Conferences also have a list of Spe
   - `name`: the speaker's name
   - `presentationDuration`: the duration of the presentation.
 
+Para este ejercicio, he realizado el siguiente diagrama UML
+
+
+@startuml
+class Event {
+- id: int
+- date: Date
+- duration: int
+- location: String
+- title: String
+- list: List<Guest>
+  }
+
+class Guest {
+- id: int
+- name: String
+- status: Status
+  }
+
+enum Status {
+- ATTENDING
+- NOT_ATTENDING,
+- NO_RESPONSE
+  }
+
+class Speaker {
+- id: int
+- name: String
+- presentationDuration: int
+  }
+
+Event "1" o-- "*" Guest
+
+Event "1" o-- "*" Speaker
+@enduml
+
+El diagrama UML quedaría así
+
+![img_1.png](img_1.png)
+
+Para que se cumplan los requerimientos, así es como he creado las tablas
+
+![img_6.png](img_6.png)
+
+Las relaciones establecidas entre tablas son
+
+![img_7.png](img_7.png)
+
+![img_8.png](img_8.png)
+
+
+Tras probar con testing que todo se guarda correctamente, así se muestran los resultados
+
+![img_9.png](img_9.png)
+
+![img_10.png](img_10.png)
+
+![img_11.png](img_11.png)
+
 3. Create a simple **Use Case Diagram** illustrating how a user (e.g., admin, member, or guest) interacts with **either** the Association of Nurses or the Event Management application. Identify the main **actors** and the **use cases** (e.g., update membership, schedule an event, invite guests).
 
 4. Create a **UML Class Diagram** for one (or both) of the domains above:

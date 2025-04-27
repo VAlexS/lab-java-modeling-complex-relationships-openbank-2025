@@ -1,5 +1,5 @@
 package com.iron.modelingComplexRelations.models.nurses;
 
-public enum Status {
+public enum StatusNurses {
     ACTIVE, LAPSED
 }

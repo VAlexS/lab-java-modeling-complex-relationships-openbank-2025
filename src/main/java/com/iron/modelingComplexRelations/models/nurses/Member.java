@@ -17,7 +17,7 @@ public class Member {
     private String name;
 
     @Enumerated(EnumType.STRING)
-    private Status status;
+    private StatusNurses status;
 
     @Column(name = "renewal_date", nullable = false)
     private Date renewalDate;
@@ -29,7 +29,7 @@ public class Member {
     public Member() {
     }
 
-    public Member(String name, Status status, Date renewalDate) {
+    public Member(String name, StatusNurses status, Date renewalDate) {
         this.name = name;
         this.status = status;
         this.renewalDate = renewalDate;
@@ -51,11 +51,11 @@ public class Member {
         this.name = name;
     }
 
-    public Status getStatus() {
+    public StatusNurses getStatus() {
         return status;
     }
 
-    public void setStatus(Status status) {
+    public void setStatus(StatusNurses status) {
         this.status = status;
     }
 
