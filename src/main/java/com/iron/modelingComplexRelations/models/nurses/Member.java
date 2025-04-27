@@ -3,6 +3,7 @@ package com.iron.modelingComplexRelations.models.nurses;
 import jakarta.persistence.*;
 
 import java.sql.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "member")
@@ -22,7 +23,8 @@ public class Member {
     private Date renewalDate;
 
 
-    @ManyToOne
+    @ManyToMany(mappedBy = "members", fetch = FetchType.EAGER)
+    private List<Chapter> chapters;
 
     public Member() {
     }
@@ -63,6 +65,14 @@ public class Member {
 
     public void setRenewalDate(Date renewalDate) {
         this.renewalDate = renewalDate;
+    }
+
+    public List<Chapter> getChapters() {
+        return chapters;
+    }
+
+    public void setChapters(List<Chapter> chapters) {
+        this.chapters = chapters;
     }
 
     @Override
